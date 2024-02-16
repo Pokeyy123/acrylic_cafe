@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #eed9c4;
+}
+
+.header {
+    background-color: #F4F4F4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar {
+    background-color: #F4F4F4;
+}
+
+.logo {
+    
+    width: 200px;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.search {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    border-radius: 28px;
+    background: lightgrey;
+    transition: background 0.25s;
+}
+
+.search:focus-within {
+    background: #f1f1f1;
+}
+
+.search-input {
+    font-size: 16px;
+    color: #333333;
+    margin-left: 14px;
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 300px;
+}
+
+.search-input::placeholder, .search-icon {
+    color: rgba(0,0,0,0.25);
+}
+
+.meniu {
+    display: flex;
+    padding-top: 260px;
+    padding-left: 50px;
+    flex-direction: column;
+    padding-bottom: 20px;
+
+}
+
+.meniu_h1 {
+    text-decoration: underline;
+}
+
+.alegeri {
+    margin-top: 20px;
+    text-indent: 80px;
+}
+
+.column {
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .column {
+        width: 50%;
+    }
+}
+
+
+
